@@ -1,0 +1,120 @@
+.progress-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+
+.progress-card.dark {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.progress-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dark .card-label {
+  color: #9ca3af;
+}
+
+.card-stats {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+}
+
+.dark .card-stats {
+  color: #f3f4f6;
+}
+
+.current {
+  color: #3b82f6;
+}
+
+.separator {
+  color: #d1d5db;
+  margin: 0 4px;
+}
+
+.dark .separator {
+  color: #4b5563;
+}
+
+.total {
+  color: #6b7280;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dark .progress-bar {
+  background: #374151;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2937;
+  min-width: 45px;
+  text-align: right;
+}
+
+.dark .percentage {
+  color: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+  .progress-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-stats {
+    font-size: 24px;
+  }
+
+  .card-icon {
+    font-size: 28px;
+  }
+}

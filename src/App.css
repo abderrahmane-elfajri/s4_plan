@@ -1,0 +1,43 @@
+.app-container {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container.dark {
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+.app-layout {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  flex: 1;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+/* Keep pages from touching viewport edges on large screens */
+.app-main > * {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .app-layout {
+    display: block;
+  }
+
+  .app-main {
+    width: 100%;
+  }
+}

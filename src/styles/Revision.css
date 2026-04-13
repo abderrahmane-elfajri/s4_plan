@@ -1,0 +1,407 @@
+.revision-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.dark .page-header h1 {
+  color: #f3f4f6;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.dark .page-header p {
+  color: #9ca3af;
+}
+
+/* Exam Preparation */
+.exam-preparation {
+  margin-bottom: 50px;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.dark .exam-card {
+  background: #1f2937;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.exam-content h3 {
+  font-size: 16px;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.dark .exam-content h3 {
+  color: #9ca3af;
+}
+
+.exam-status {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.status-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.dark .status-desc {
+  color: #9ca3af;
+}
+
+.focus-btn {
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.focus-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+/* Focus Areas */
+.focus-areas {
+  margin-bottom: 50px;
+}
+
+.focus-areas h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.dark .focus-areas h2 {
+  color: #f3f4f6;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.focus-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dark .focus-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.focus-card:hover {
+  transform: translateY(-4px);
+}
+
+.focus-card h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.dark .focus-card h3 {
+  color: #f3f4f6;
+}
+
+.focus-count {
+  font-size: 28px;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 6px;
+}
+
+.focus-desc {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.dark .focus-desc {
+  color: #9ca3af;
+}
+
+/* Checklist */
+.revision-checklist {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .revision-checklist {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.revision-checklist h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.dark .revision-checklist h2 {
+  color: #f3f4f6;
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.checklist-section h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.dark .checklist-section h3 {
+  color: #f3f4f6;
+}
+
+.checklist-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checklist-section li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.dark .checklist-section li {
+  color: #d1d5db;
+}
+
+.checklist-section input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+/* Revision Cards */
+.revision-cards-section {
+  margin-bottom: 50px;
+}
+
+.revision-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.no-revision-topics {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  color: #6b7280;
+}
+
+.dark .no-revision-topics {
+  background: #111827;
+  color: #9ca3af;
+}
+
+/* Exam Tips */
+.exam-tips {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .exam-tips {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exam-tips h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.dark .exam-tips h2 {
+  color: #f3f4f6;
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.tip {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+
+.tip-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.tip h4 {
+  font-size: 16px;
+  color: #1f2937;
+  margin: 0 0 6px 0;
+}
+
+.dark .tip h4 {
+  color: #f3f4f6;
+}
+
+.tip p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.dark .tip p {
+  color: #9ca3af;
+}
+
+/* Last Minute Prep */
+.last-minute-prep {
+  background: linear-gradient(135deg, #fef3c7 0%, #fef9e7 100%);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.dark .last-minute-prep {
+  background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+}
+
+.last-minute-prep h2 {
+  font-size: 24px;
+  color: #78350f;
+  margin-bottom: 24px;
+}
+
+.dark .last-minute-prep h2 {
+  color: #fcd34d;
+}
+
+.last-minute-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.last-minute-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .last-minute-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.last-minute-card h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.dark .last-minute-card h3 {
+  color: #f3f4f6;
+}
+
+.last-minute-card ul {
+  list-style: none;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.dark .last-minute-card ul {
+  color: #d1d5db;
+}
+
+.last-minute-card li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .revision-page {
+    padding: 24px 16px;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .exam-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .revision-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .last-minute-content {
+    grid-template-columns: 1fr;
+  }
+}

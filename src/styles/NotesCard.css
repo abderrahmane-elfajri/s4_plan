@@ -1,0 +1,178 @@
+.notes-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #3b82f6;
+}
+
+.notes-card.dark {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notes-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.card-info h4 {
+  font-size: 16px;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.dark .card-info h4 {
+  color: #f3f4f6;
+}
+
+.module-ref,
+.date-ref {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.dark .module-ref,
+.dark .date-ref {
+  color: #9ca3af;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.delete-btn:hover {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.dark .edit-btn:hover {
+  background: #0c2340;
+  color: #93c5fd;
+}
+
+.dark .delete-btn:hover {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+.edit-area {
+  margin-bottom: 12px;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #1f2937;
+  resize: vertical;
+  min-height: 100px;
+  background: white;
+  margin-bottom: 12px;
+}
+
+.dark .note-textarea {
+  background: #111827;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.save-btn {
+  background: #10b981;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #059669;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.dark .cancel-btn {
+  background: #4b5563;
+  color: #f3f4f6;
+}
+
+.cancel-btn:hover {
+  background: #d1d5db;
+}
+
+.dark .cancel-btn:hover {
+  background: #6b7280;
+}
+
+.card-content {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dark .card-content {
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .notes-card {
+    padding: 16px;
+  }
+
+  .card-info h4 {
+    font-size: 14px;
+  }
+}
