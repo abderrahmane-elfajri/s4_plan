@@ -4,13 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tauri dev",
-    "build": "vite build && tauri build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "tauri": "tauri",
-    "web:dev": "vite",
-    "web:build": "vite build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
